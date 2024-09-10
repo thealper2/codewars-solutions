@@ -1,0 +1,1 @@
+STRANGE_STRING = 'ᾉ'
