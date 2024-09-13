@@ -9,5 +9,3 @@ def draw_stairs(n):
     result += "I"
 
     return str(result)
-
-print(draw_stairs(3))

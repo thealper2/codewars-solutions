@@ -6,5 +6,3 @@ def count_sheep(n):
         i += 1
 
     return result
-
-print(count_sheep(2))
