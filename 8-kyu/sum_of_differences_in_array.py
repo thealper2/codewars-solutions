@@ -9,8 +9,3 @@ def sum_of_differences(arr):
         c += arr[i] - arr[i+1]
     
     return c
-
-print(sum_of_differences([1, 2, 10]))
-print(sum_of_differences([-3, -2, -1]))
-print(sum_of_differences([1, 1, 1, 1, 1]))
-print(sum_of_differences([]))
