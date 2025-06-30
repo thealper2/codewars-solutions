@@ -1,10 +1,10 @@
 def animals(heads, legs):
     if heads == 0 and legs == 0:
         return (0, 0)
-    
+
     if heads < 0 or legs < 0:
         return "No solutions"
-    
+
     # x = (legs - 2y) / 4
     # y = (4 * heads - legs) / 2
     y = (4 * heads - legs) / 2

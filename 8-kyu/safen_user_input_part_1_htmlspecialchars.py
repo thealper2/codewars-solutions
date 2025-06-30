@@ -1,4 +1,4 @@
-def html_special_chars(data): 
+def html_special_chars(data):
     arr = []
     for i in data:
         if i == "<":
@@ -12,4 +12,4 @@ def html_special_chars(data):
         else:
             arr.append(i)
 
-    return ''.join(arr)
+    return "".join(arr)

@@ -7,5 +7,5 @@ def get_drink_by_profession(param):
         "politician": "Your tax dollars",
         "rapper": "Cristal",
     }
-    
+
     return d.get(param.lower(), "Beer")

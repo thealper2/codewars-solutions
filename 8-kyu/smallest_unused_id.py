@@ -1,4 +1,3 @@
-
 def next_id(arr):
     sorted_arr = list(set(sorted(arr)))
     new_arr = []

@@ -1,1 +1,1 @@
-STRANGE_STRING = 'ᾉ'
+STRANGE_STRING = "ᾉ"

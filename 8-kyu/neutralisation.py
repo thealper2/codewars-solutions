@@ -5,5 +5,5 @@ def neutralise(s1, s2):
             result += s1[i]
         else:
             result += "0"
-    
+
     return result

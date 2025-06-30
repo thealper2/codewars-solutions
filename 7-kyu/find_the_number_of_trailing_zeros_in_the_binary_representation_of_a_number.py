@@ -5,13 +5,13 @@ def trailing_zeros(n) -> int:
         a = i % 2
         i = i // 2
         result[0:0] = str(a)
-    
+
     result = result[::-1]
     count = 0
     for item in result:
         if int(item) == 1:
             break
-            
+
         count += 1
-        
+
     return count

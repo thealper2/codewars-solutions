@@ -1,2 +1,2 @@
-def take(arr,n):
+def take(arr, n):
     return arr[:n]

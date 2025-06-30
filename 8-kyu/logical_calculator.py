@@ -1,6 +1,6 @@
 def logical_calc(array, op):
-    result = array[0]  
-    
+    result = array[0]
+
     for i in range(1, len(array)):
         if op == "AND":
             result = result & array[i]

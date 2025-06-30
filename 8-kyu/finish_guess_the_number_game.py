@@ -3,12 +3,11 @@ class Guesser:
         self.number = number
         self.lives = lives
 
-    def guess(self,n):
+    def guess(self, n):
         if self.lives == 0:
             raise Except("")
         elif self.number == n:
             return True
-        
+
         self.lives -= 1
         return False
-        

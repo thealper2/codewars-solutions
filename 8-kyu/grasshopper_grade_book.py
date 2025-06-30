@@ -8,5 +8,5 @@ def get_grade(s1, s2, s3):
         return "C"
     elif avg_score < 90:
         return "B"
-    
+
     return "A"

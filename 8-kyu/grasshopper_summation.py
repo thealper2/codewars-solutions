@@ -6,4 +6,3 @@ def summation(num):
         count += 1
 
     return result
-

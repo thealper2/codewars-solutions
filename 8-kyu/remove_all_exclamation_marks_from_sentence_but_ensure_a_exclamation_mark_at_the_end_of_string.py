@@ -1,2 +1,2 @@
 def remove(st):
-    return st.replace("!", '') + "!"
+    return st.replace("!", "") + "!"

@@ -9,4 +9,4 @@ def calculate_age(year_of_birth, current_year):
     elif diff < 0:
         return f"You will be born in {-diff} years."
     else:
-        return 'You were born this very year!'
+        return "You were born this very year!"

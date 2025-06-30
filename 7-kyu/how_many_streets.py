@@ -5,7 +5,7 @@ def count_streets(streets, drivers):
         if street not in street_dict:
             street_dict[street] = i
             i += 1
-    
+
     results = []
     for driver in drivers:
         d1 = street_dict[driver[0]]
@@ -14,5 +14,5 @@ def count_streets(streets, drivers):
             results.append(d2 - d1 - 1)
         else:
             results.append(d1 - d2 - 1)
-    
+
     return results

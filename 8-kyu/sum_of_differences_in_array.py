@@ -6,6 +6,6 @@ def sum_of_differences(arr):
 
     c = 0
     for i in range(len(arr) - 1):
-        c += arr[i] - arr[i+1]
-    
+        c += arr[i] - arr[i + 1]
+
     return c

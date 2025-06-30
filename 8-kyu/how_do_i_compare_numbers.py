@@ -1,7 +1,7 @@
 def what_is(x):
     if x == 42:
-        return 'everything'
+        return "everything"
     elif x == 42 * 42:
-        return 'everything squared'
+        return "everything squared"
     else:
-        return 'nothing'
+        return "nothing"

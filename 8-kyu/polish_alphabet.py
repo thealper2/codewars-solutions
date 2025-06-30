@@ -1,5 +1,5 @@
-def correct_polish_letters(st): 
-    d  = {
+def correct_polish_letters(st):
+    d = {
         "ą": "a",
         "ć": "c",
         "ę": "e",
@@ -10,5 +10,5 @@ def correct_polish_letters(st):
         "ź": "z",
         "ż": "z",
     }
-    
-    return ''.join([d[_] if _ in d.keys() else _ for _ in st])
+
+    return "".join([d[_] if _ in d.keys() else _ for _ in st])

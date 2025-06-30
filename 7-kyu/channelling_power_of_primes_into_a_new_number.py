@@ -7,11 +7,11 @@ def channelling_primes(n):
         for p in primes:
             if p * p > i:
                 break
-                
+
             if i % p == 0:
                 is_prime = False
                 break
-                
+
         if is_prime:
             primes.append(i)
             result += 2 ** (i - 1)

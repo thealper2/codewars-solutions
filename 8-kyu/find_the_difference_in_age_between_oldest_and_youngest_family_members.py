@@ -6,5 +6,4 @@ def difference_in_ages(ages):
             if ages[j] > ages[j + 1]:
                 ages[j], ages[j + 1] = ages[j + 1], ages[j]
 
-
     return (ages[0], ages[-1], ages[-1] - ages[0])

@@ -1,12 +1,13 @@
 from collections import Counter
 
+
 def pyramid(stones):
     d = Counter(stones)
     set_arr = sorted(list(set(stones)))
 
     if len(set_arr) < 3 or max(d.values()) < 3:
         return None
-    
+
     arr3 = []
     arr2 = []
     arr1 = []
@@ -18,7 +19,7 @@ def pyramid(stones):
             arr2.append(k)
         else:
             arr1.append(k)
-    
+
     result = 0
     for i in range(3, 0, -1):
         if i == 3:
@@ -37,6 +38,6 @@ def pyramid(stones):
 
     return result
 
-stones = [1,1,1,2,2,2,3,3,3]
-print(pyramid(stones))
 
+stones = [1, 1, 1, 2, 2, 2, 3, 3, 3]
+print(pyramid(stones))

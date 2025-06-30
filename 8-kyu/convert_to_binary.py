@@ -6,4 +6,4 @@ def to_binary(n):
         i = i // 2
         result[0:0] = str(a)
 
-    return int(''.join(result))
+    return int("".join(result))

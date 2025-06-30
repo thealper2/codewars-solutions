@@ -4,4 +4,9 @@ def solution(arr_val, arr_unit):
 
     G = 6.67e-11
 
-    return G * (mass[arr_unit[0]] * arr_val[0]) * (mass[arr_unit[1]] * arr_val[1]) / (distance[arr_unit[2]] * arr_val[2]) ** 2
+    return (
+        G
+        * (mass[arr_unit[0]] * arr_val[0])
+        * (mass[arr_unit[1]] * arr_val[1])
+        / (distance[arr_unit[2]] * arr_val[2]) ** 2
+    )
