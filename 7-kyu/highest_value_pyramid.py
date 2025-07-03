@@ -1,43 +1,36 @@
-from collections import Counter
-
+from collections import defaultdict
 
 def pyramid(stones):
-    d = Counter(stones)
-    set_arr = sorted(list(set(stones)))
-
-    if len(set_arr) < 3 or max(d.values()) < 3:
+    if not stones:
         return None
-
-    arr3 = []
-    arr2 = []
-    arr1 = []
-
-    for k, val in d.items():
-        if val >= 3:
-            arr3.append(k)
-        elif val >= 2:
-            arr2.append(k)
-        else:
-            arr1.append(k)
-
-    result = 0
-    for i in range(3, 0, -1):
-        if i == 3:
-            result += max(arr3) * 3
-            arr3.remove(max(arr3))
-
-        elif i == 2:
-            result += max(arr2 + arr3) * 2
-            if max(arr2 + arr3) in arr3:
-                arr3.remove(max(arr2 + arr3))
-            else:
-                arr2.remove(max(arr2 + arr3))
-
-        elif i == 1:
-            result += max(arr1 + arr2 + arr3) * 1
-
-    return result
-
-
-stones = [1, 1, 1, 2, 2, 2, 3, 3, 3]
-print(pyramid(stones))
+    
+    count = defaultdict(int)
+    for stone in stones:
+        count[stone] += 1
+    
+    top_candidates = []
+    middle_candidates = []
+    bottom_candidates = []
+    
+    for num, cnt in count.items():
+        if cnt >= 1:
+            top_candidates.append(num)
+        if cnt >= 2:
+            middle_candidates.append(num)
+        if cnt >= 3:
+            bottom_candidates.append(num)
+    
+    max_sum = None
+    
+    for top in top_candidates:
+        for middle in middle_candidates:
+            if middle == top:
+                continue
+            for bottom in bottom_candidates:
+                if bottom == top or bottom == middle:
+                    continue
+                current_sum = top + 2 * middle + 3 * bottom
+                if max_sum is None or current_sum > max_sum:
+                    max_sum = current_sum
+    
+    return max_sum
