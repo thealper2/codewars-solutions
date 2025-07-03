@@ -1,0 +1,1 @@
+d=lambda a:a in' :=lambdain\'\\'
