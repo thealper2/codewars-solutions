@@ -4,11 +4,11 @@ def strong_enough(earthquake, age):
 
     for q in earthquake:
         total *= sum(q)
-    
+
     for year in range(1, age + 1):
         strength = strength - (strength * 0.01)
-        
+
     if total < strength:
         return "Safe!"
-    
+
     return "Needs Reinforcement!"

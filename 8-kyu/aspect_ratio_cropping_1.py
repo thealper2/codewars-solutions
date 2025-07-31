@@ -1,5 +1,5 @@
-from typing import Tuple
 import math
+from typing import Tuple
 
 
 def aspect_ratio(x: int, y: int) -> Tuple[int, int]:

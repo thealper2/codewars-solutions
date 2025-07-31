@@ -9,5 +9,5 @@ def even_twins(numbers):
             if s % 2 == 0 and s not in seen:
                 count += 1
                 seen.append(s)
-    
+
     return count

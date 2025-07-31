@@ -6,5 +6,5 @@ def array_change(arr):
             temp = arr[i]
             arr[i] = arr[i - 1] + 1
             total += arr[i] - temp
-            
+
     return total

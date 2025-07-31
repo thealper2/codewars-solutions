@@ -3,5 +3,5 @@ def sum_and_multiply(sum, multiply):
         right = sum - left
         if left + right == sum and left * right == multiply:
             return [left, right]
-        
+
     return None

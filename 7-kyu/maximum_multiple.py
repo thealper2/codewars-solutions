@@ -9,7 +9,7 @@ def max_multiple(divisor, bound):
 
         if n < 0:
             continue
-    
+
         result = n
-        
+
     return result

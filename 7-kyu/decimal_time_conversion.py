@@ -1,10 +1,10 @@
 def to_industrial(time):
     if isinstance(time, str):
-        hours, minutes = map(int, time.split(':'))
+        hours, minutes = map(int, time.split(":"))
         total_minutes = hours * 60 + minutes
     else:
         total_minutes = time
-        
+
     decimal_hours = round(total_minutes / 60, 2)
     return decimal_hours
 

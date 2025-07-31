@@ -5,5 +5,10 @@ def sort_bytes(n):
     byte4 = n & 0xFF
     bytes_list = [byte1, byte2, byte3, byte4]
     bytes_list.sort(reverse=True)
-    new_number = (bytes_list[0] << 24) | (bytes_list[1] << 16) | (bytes_list[2] << 8) | bytes_list[3]
+    new_number = (
+        (bytes_list[0] << 24)
+        | (bytes_list[1] << 16)
+        | (bytes_list[2] << 8)
+        | bytes_list[3]
+    )
     return new_number

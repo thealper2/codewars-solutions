@@ -7,10 +7,10 @@ def uglify_word(s):
                 result.append(char.upper())
             else:
                 result.append(char.lower())
-            
+
             flag ^= 1
-        
+
         else:
             result.append(char)
             flag = 1
-    return ''.join(result)
+    return "".join(result)

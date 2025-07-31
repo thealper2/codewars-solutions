@@ -4,10 +4,10 @@ def draw_rectangle(canvas, rectangle):
         for x in range(x1, x2 + 1):
             if y == y1 or y == y2:
                 if x == x1 or x == x2:
-                    canvas[y][x] = '*'
+                    canvas[y][x] = "*"
                 else:
-                    canvas[y][x] = '-'
+                    canvas[y][x] = "-"
             else:
                 if x == x1 or x == x2:
-                    canvas[y][x] = '|'
+                    canvas[y][x] = "|"
     return canvas

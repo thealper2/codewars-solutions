@@ -9,7 +9,7 @@ def hidden(num):
         9: "m",
         8: "n",
         0: "o",
-        5: "t"
+        5: "t",
     }
-    
-    return ''.join(maya[int(d)] for d in str(num))
+
+    return "".join(maya[int(d)] for d in str(num))

@@ -1,4 +1,4 @@
-def create_box(m, n):s
+def create_box(m, n):
     matrix = [[0 for _ in range(m)] for _ in range(n)]
     layers = (min(m, n) + 1) // 2
     for layer in range(layers):
@@ -14,4 +14,5 @@ def create_box(m, n):s
                 matrix[row][layer] = value
             if m - 1 - layer >= 0 and matrix[row][m - 1 - layer] == 0:
                 matrix[row][m - 1 - layer] = value
+
     return matrix

@@ -10,11 +10,11 @@ def convert_lojban(lojban):
         "ze": 7,
         "bi": 8,
         "so": 9,
-        "no": 0
+        "no": 0,
     }
     result = ""
-    
+
     for i in range(0, n, 2):
-        result += str(lojban_dict[lojban[i:i+2]])
-        
+        result += str(lojban_dict[lojban[i : i + 2]])
+
     return int(result)

@@ -1,5 +1,5 @@
 def convert_my_dollars(usd, currency):
-    vowels = {'a', 'e', 'i', 'o', 'u'}
+    vowels = {"a", "e", "i", "o", "u"}
     first_char = currency[0].lower()
     conversion_rate = CONVERSION_RATES.get(currency, 0)
 

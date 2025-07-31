@@ -7,5 +7,5 @@ def encode(st):
             result += str(ord(c) % 96)
         else:
             result += c
-            
+
     return result

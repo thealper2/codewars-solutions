@@ -4,5 +4,5 @@ def count_sum_of_two_representations(n, l, r):
         B = n - A
         if l <= B <= r and A <= B:
             count += 1
-            
+
     return count

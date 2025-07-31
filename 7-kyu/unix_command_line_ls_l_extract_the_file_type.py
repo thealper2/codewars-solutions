@@ -7,7 +7,7 @@ def linux_type(file_attribute):
         "b": "block_file",
         "p": "pipe",
         "s": "socket",
-        "D": "door"
+        "D": "door",
     }
-    
+
     return types[file_attribute[0]]

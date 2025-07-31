@@ -1,11 +1,11 @@
 from collections import defaultdict
 
 
-def missing_values(seq): 
+def missing_values(seq):
     freq = defaultdict(int)
     for num in seq:
         freq[num] += 1
-    
+
     x = None
     y = None
     for num, count in freq.items():
@@ -13,5 +13,5 @@ def missing_values(seq):
             x = num
         elif count == 2:
             y = num
-    
+
     return x * x * y

@@ -1,7 +1,7 @@
 def replace_nth(text, n, old_value, new_value):
     if n <= 0:
         return text
-    
+
     count = 0
     result = []
     for char in text:
@@ -13,4 +13,4 @@ def replace_nth(text, n, old_value, new_value):
                 result.append(char)
         else:
             result.append(char)
-    return ''.join(result)
+    return "".join(result)

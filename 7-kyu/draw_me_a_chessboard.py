@@ -7,7 +7,7 @@ def chess_board(rows, columns):
                 row.append("O")
             else:
                 row.append("X")
-                
+
         board.append(row)
-        
+
     return board

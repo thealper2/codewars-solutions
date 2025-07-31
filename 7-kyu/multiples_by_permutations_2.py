@@ -4,8 +4,8 @@ def find_lowest_int(k):
     while True:
         prod1 = k * n
         prod2 = k2 * n
-        
+
         if sorted(str(prod1)) == sorted(str(prod2)):
             return n
-        
+
         n += 1

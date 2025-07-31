@@ -3,6 +3,6 @@ def mystery(s, n):
     while n > 0:
         bin_n.append(str(n % 2))
         n //= 2
-    
-    n = ''.join(bin_n[::-1]) 
-    return ''.join(y for x, y in zip(n, s) if x == '1')
+
+    n = "".join(bin_n[::-1])
+    return "".join(y for x, y in zip(n, s) if x == "1")

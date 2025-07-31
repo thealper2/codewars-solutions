@@ -4,7 +4,7 @@ class LCG:
         self.a = 2
         self.c = 3
         self.m = 10
-    
+
     def random(self):
         self.seed = (self.a * self.seed + self.c) % self.m
         return self.seed / self.m

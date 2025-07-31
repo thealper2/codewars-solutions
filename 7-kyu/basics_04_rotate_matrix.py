@@ -6,7 +6,7 @@ def rotate_matrix(arr):
         new_row = []
         for i in range(n):
             new_row.append(arr[i][j])
-        
+
         rotated.append(new_row)
-    
+
     return rotated

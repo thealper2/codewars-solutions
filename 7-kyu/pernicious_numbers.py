@@ -1,5 +1,6 @@
 import math
 
+
 def is_prime(num):
     if num <= 1:
         return False
@@ -12,6 +13,7 @@ def is_prime(num):
             return False
     return True
 
+
 def pernicious(n):
     if isinstance(n, float):
         if n < 1:
@@ -19,7 +21,7 @@ def pernicious(n):
         n = int(n)
     if n < 1:
         return "No pernicious numbers"
-    
+
     pernicious_numbers = []
     for num in range(1, n + 1):
         binary = bin(num)[2:]

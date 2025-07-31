@@ -5,7 +5,7 @@ def identify_weapon(character):
         "Lagravis": "Lagravis-Blazeprowlor",
         "Crominus": "Crominus-Grandorius",
         "Tormak": "Tormak-Tygafyre",
-        "LiElla": "LiElla-Roarburn"
+        "LiElla": "LiElla-Roarburn",
     }
-    
+
     return characters.get(character, "Not a character")

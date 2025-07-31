@@ -10,7 +10,7 @@ def is_magical(square):
         [square[2], square[5], square[8]],
         # Diagonals
         [square[0], square[4], square[8]],
-        [square[2], square[4], square[6]]
+        [square[2], square[4], square[6]],
     ]
-    
+
     return all(sum(line) == 15 for line in lines)

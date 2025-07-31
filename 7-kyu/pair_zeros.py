@@ -6,6 +6,6 @@ def pair_zeros(arr):
             zero_count += 1
             if zero_count % 2 == 0:
                 continue
-                
+
         result.append(num)
     return result

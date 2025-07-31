@@ -7,5 +7,5 @@ def elements_sum(arr, d=0):
             total += arr[outer_index][i - 1]
         else:
             total += d
-            
+
     return total

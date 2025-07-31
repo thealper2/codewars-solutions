@@ -1,2 +1,2 @@
 def explode(s):
-    return ''.join(c * int(c) for c in s)
+    return "".join(c * int(c) for c in s)

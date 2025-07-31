@@ -6,6 +6,6 @@ def numbers_grouping(arr):
             group_counts[group] += 1
         else:
             group_counts[group] = 1
-            
+
     total_lines = len(group_counts) + sum(group_counts.values())
     return total_lines

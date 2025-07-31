@@ -1,9 +1,9 @@
-def right_depth(arr,constraints):
+def right_depth(arr, constraints):
     if not constraints:
         return False
-    
+
     depth_counts = {}
-    
+
     for subarray in arr:
         current = subarray
         depth = 1
@@ -14,16 +14,16 @@ def right_depth(arr,constraints):
             pass
         else:
             depth = 1
-        
+
         if depth in depth_counts:
             depth_counts[depth] += 1
         else:
             depth_counts[depth] = 1
-    
+
     for depth, count in depth_counts.items():
         if depth not in constraints:
             return False
         if count > constraints[depth]:
             return False
-    
+
     return True

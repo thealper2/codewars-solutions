@@ -1,7 +1,7 @@
 def matrix_diagonal(matrix, value):
     if not matrix:
         return 0
-    
+
     n = len(matrix)
     diagonal = []
     if value > 0:
@@ -21,5 +21,5 @@ def matrix_diagonal(matrix, value):
     else:
         for i in range(n):
             diagonal.append(matrix[i][i])
-    
+
     return sum(diagonal)

@@ -1,4 +1,4 @@
-def most_one_bits(nums:list[int]) -> int:
+def most_one_bits(nums: list[int]) -> int:
     seen = set()
     max_count = -1
     result = None
@@ -10,7 +10,7 @@ def most_one_bits(nums:list[int]) -> int:
             binary = bin(num & 0xFF)[2:].zfill(8)
         else:
             binary = bin(num)[2:].zfill(8)[-8:]
-        count = binary.count('1')
+        count = binary.count("1")
         if count >= max_count:
             max_count = count
             result = numa

@@ -1,2 +1,2 @@
-def remainder(dividend,divisor):
-	return dividend - (dividend // divisor) * divisor
+def remainder(dividend, divisor):
+    return dividend - (dividend // divisor) * divisor

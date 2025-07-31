@@ -1,7 +1,7 @@
 def small_word_helper(sentence):
     words = sentence.split()
     result = []
-    vowels = {'a', 'e', 'i', 'o', 'u'}
+    vowels = {"a", "e", "i", "o", "u"}
     for word in words:
         n = len(word)
         if n <= 3:
@@ -11,7 +11,7 @@ def small_word_helper(sentence):
             for c in word:
                 if c.lower() not in vowels:
                     temp += c
-                    
+
             result.append(temp)
-            
-    return ' '.join(result)
+
+    return " ".join(result)

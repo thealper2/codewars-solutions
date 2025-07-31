@@ -6,6 +6,6 @@ def validate_ean(code):
             total += digit
         else:
             total += digit * 3
-    
+
     check_digit = (10 - (total % 10)) % 10
     return int(code[-1]) == check_digit

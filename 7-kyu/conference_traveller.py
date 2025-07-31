@@ -4,5 +4,5 @@ def conference_picker(cities_visited, cities_offered):
             continue
         else:
             return city
-        
+
     return "No worthwhile conferences this year!"

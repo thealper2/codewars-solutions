@@ -14,4 +14,4 @@ def strange_coach(players):
     if not possible_letters:
         return "forfeit"
     else:
-        return ''.join(possible_letters)
+        return "".join(possible_letters)

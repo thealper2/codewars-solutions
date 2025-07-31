@@ -1,11 +1,11 @@
 def rounders(n):
     if n == 0:
         return 0
-    
+
     while True:
         s = str(n)
         non_zero_pos = len(s) - 1
-        while non_zero_pos >= 0 and s[non_zero_pos] == '0':
+        while non_zero_pos >= 0 and s[non_zero_pos] == "0":
             non_zero_pos -= 1
         if non_zero_pos == 0:
             return n

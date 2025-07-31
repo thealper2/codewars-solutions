@@ -4,5 +4,5 @@ def polydivisible(x):
         sub_num = int(x[:i])
         if sub_num % i != 0:
             return False
-        
+
     return True

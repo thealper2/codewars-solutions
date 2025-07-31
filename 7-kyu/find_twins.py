@@ -3,7 +3,7 @@ def elimination(arr):
     for num in arr:
         if num in seen:
             return num
-        
+
         seen.add(num)
-        
+
     return None

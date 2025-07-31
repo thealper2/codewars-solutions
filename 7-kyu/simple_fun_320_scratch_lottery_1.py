@@ -9,8 +9,8 @@ def scratch(lottery):
             if word != temp:
                 found = False
                 break
-                
+
         if found:
             result += reward
-        
+
     return result

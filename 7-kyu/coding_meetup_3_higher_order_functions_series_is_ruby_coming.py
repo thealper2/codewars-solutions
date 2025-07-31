@@ -1,6 +1,6 @@
-def is_ruby_coming(lst): 
+def is_ruby_coming(lst):
     for l in lst:
-        if l['language'] == 'Ruby':
+        if l["language"] == "Ruby":
             return True
-        
+
     return False

@@ -16,5 +16,5 @@ def find_key(encryption_key):
             q = n // p
             if is_prime(q):
                 return (p - 1) * (q - 1)
-            
+
     return None

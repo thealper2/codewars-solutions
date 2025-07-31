@@ -1,2 +1,2 @@
 def product(st):
-    return st.count('!') * st.count('?')
+    return st.count("!") * st.count("?")

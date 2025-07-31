@@ -5,5 +5,5 @@ def or_arrays(arr1, arr2, default=0):
         val1 = arr1[i] if i < len(arr1) else default
         val2 = arr2[i] if i < len(arr2) else default
         result.append(val1 | val2)
-        
+
     return result

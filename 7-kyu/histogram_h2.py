@@ -2,7 +2,7 @@ def histogram(results):
     n = len(results)
     total = sum(results)
     result = []
-    
+
     for i in range(n - 1, -1, -1):
         if results[i]:
             percentage = results[i] / total
@@ -12,5 +12,5 @@ def histogram(results):
         else:
             line = f"{i + 1}|"
             result.append(line)
-            
-    return "\n".join(result) + '\n'
+
+    return "\n".join(result) + "\n"

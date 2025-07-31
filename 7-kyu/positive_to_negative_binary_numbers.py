@@ -2,7 +2,7 @@ def positive_to_negative(binary):
     n = len(binary)
     if not binary:
         return []
-    
+
     inverted = [1 - bit for bit in binary]
     carry = 1
     result = []

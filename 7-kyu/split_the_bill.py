@@ -3,5 +3,5 @@ def split_the_bill(x):
     pay = {}
     for k, v in x.items():
         pay[k] = round(v - mean, 2)
-        
+
     return pay

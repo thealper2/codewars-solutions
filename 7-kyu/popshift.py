@@ -6,10 +6,10 @@ def pop_shift(s):
     while l < r:
         second += s[l]
         first += s[r]
-        
+
         l += 1
         r -= 1
-        
+
     if l == r:
         third += s[l]
     return [first, second, third]

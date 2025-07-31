@@ -9,7 +9,7 @@ class List(object):
                 while num > 0:
                     all_digits.append(num % 10)
                     num = num // 10
-        
+
         digit_counts = {}
         for digit in all_digits:
             if digit in digit_counts:
@@ -21,5 +21,5 @@ class List(object):
         for digit in digits_list:
             count = digit_counts.get(digit, 0)
             result.append((digit, count))
-        
+
         return result

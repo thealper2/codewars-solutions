@@ -6,5 +6,5 @@ def re_ordering(text):
             result.insert(0, word)
         else:
             result.append(word)
-            
+
     return " ".join(result)

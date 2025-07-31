@@ -10,6 +10,6 @@ def obfuscate(email):
             temp = ""
         else:
             temp += c
-            
+
     result += temp
     return result

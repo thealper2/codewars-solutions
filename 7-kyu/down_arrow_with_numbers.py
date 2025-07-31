@@ -9,6 +9,6 @@ def get_a_down_arrow_of(n):
         for num in range(max_num - 1, 0, -1):
             digit = num % 10
             line.append(str(digit))
-        indented_line = ' ' * i + ''.join(line)
+        indented_line = " " * i + "".join(line)
         pattern.append(indented_line)
-    return '\n'.join(pattern)
+    return "\n".join(pattern)

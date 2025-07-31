@@ -7,5 +7,5 @@ def combine(*args):
                 result[k] = v
             else:
                 result[k] += v
-                
+
     return result

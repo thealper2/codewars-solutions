@@ -4,7 +4,7 @@ def distribution_of(golds):
 
     while golds:
         left, right = golds[0], golds[-1]
-        
+
         if left >= right:
             taken = golds.pop(0)
         else:
@@ -14,7 +14,7 @@ def distribution_of(golds):
             A += taken
         else:
             B += taken
-            
+
         turn = not turn
 
     return [A, B]

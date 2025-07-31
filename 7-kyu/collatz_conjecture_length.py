@@ -6,7 +6,7 @@ def collatz(n):
         else:
             n *= 3
             n += 1
-        
+
         count += 1
-        
+
     return count

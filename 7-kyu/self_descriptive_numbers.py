@@ -4,5 +4,5 @@ def self_descriptive(num):
     for i in range(n):
         if num_str.count(str(i)) != int(num_str[i]):
             return False
-        
+
     return True

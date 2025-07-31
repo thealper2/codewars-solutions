@@ -4,5 +4,5 @@ def palindrome_chain_length(n):
     while str(k) != str(k)[::-1]:
         k += int(str(k)[::-1])
         steps += 1
-        
+
     return steps

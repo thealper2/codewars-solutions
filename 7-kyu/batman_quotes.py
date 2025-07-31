@@ -1,5 +1,4 @@
 class BatmanQuotes(object):
-
     @staticmethod
     def get_quote(quotes, hero):
         digit = None

@@ -16,4 +16,4 @@ def testit(actions, hurdles):
             elif current_hurdle == "/":
                 hurdles[hurdle_index] = "x"
         hurdle_index += 1
-    return ''.join(hurdles)
+    return "".join(hurdles)

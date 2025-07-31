@@ -1,11 +1,11 @@
 def print_nums(*args):
     numbers = list(args)
     if not numbers:
-        return ''
-    
+        return ""
+
     if len(numbers) == 1:
         return str(numbers[0])
-    
+
     max_num = max(numbers)
     max_length = len(str(max_num))
     formatted_numbers = []
@@ -16,5 +16,5 @@ def print_nums(*args):
         else:
             formatted_num = num_str.zfill(max_length)
             formatted_numbers.append(formatted_num)
-    
-    return '\n'.join(formatted_numbers)
+
+    return "\n".join(formatted_numbers)

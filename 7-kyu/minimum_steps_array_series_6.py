@@ -7,5 +7,5 @@ def minimum_steps(numbers, value):
         operations += 1
         if sum_ >= value:
             return operations
-        
+
     return -1

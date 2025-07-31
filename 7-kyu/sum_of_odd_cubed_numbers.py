@@ -5,6 +5,6 @@ def cube_odd(arr):
             return None
         else:
             if num % 2 == 1:
-                result += num ** 3
-                
+                result += num**3
+
     return result

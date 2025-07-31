@@ -2,7 +2,7 @@ def work_needed(project_minutes, free_lancers):
     total_minutes = 0
     for free_lancer in free_lancers:
         total_minutes += free_lancer[0] * 60 + free_lancer[1]
-        
+
     if total_minutes >= project_minutes:
         return "Easy Money!"
     else:

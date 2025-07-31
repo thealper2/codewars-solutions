@@ -1,9 +1,9 @@
 def match(usefulness, months):
     useful = sum(usefulness)
-    remain = 100.
+    remain = 100.0
     for _ in range(months):
-        remain -= (remain * 0.15)
-        
+        remain -= remain * 0.15
+
     if useful >= remain:
         return "Match!"
     else:

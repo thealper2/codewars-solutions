@@ -3,14 +3,14 @@ def calculator(txt):
     a = len(parts[0])
     operator = parts[1]
     b = len(parts[2])
-    
-    if operator == '+':
-        return '.' * (a + b)
-    elif operator == '-':
-        return '.' * (a - b)
-    elif operator == '*':
-        return '.' * (a * b)
-    elif operator == '//':
-        return '.' * (a // b)
+
+    if operator == "+":
+        return "." * (a + b)
+    elif operator == "-":
+        return "." * (a - b)
+    elif operator == "*":
+        return "." * (a * b)
+    elif operator == "//":
+        return "." * (a // b)
     else:
-        return '.' * (a // b)
+        return "." * (a // b)

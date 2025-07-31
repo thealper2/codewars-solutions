@@ -3,5 +3,5 @@ def cooking_time(eggs):
     while eggs > 0:
         time += 5
         eggs -= 8
-        
+
     return time

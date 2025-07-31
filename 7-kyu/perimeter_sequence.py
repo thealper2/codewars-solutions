@@ -1,2 +1,2 @@
-def perimeter_sequence(a, n): 
+def perimeter_sequence(a, n):
     return 4 * a * n

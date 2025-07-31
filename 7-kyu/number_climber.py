@@ -6,5 +6,5 @@ def climb(n):
             n = n // 2
         else:
             n = (n - 1) // 2
-    
+
     return sequence

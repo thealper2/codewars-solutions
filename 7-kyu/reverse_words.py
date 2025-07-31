@@ -1,4 +1,4 @@
 def reverse_words(text):
-    words = text.split(' ')
+    words = text.split(" ")
     reversed_words = [word[::-1] for word in words]
-    return ' '.join(reversed_words)
+    return " ".join(reversed_words)

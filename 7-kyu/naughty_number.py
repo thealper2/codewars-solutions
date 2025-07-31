@@ -12,5 +12,5 @@ def naughty_number(arr):
 
         if found is not None:
             return index
-        
+
     return -1

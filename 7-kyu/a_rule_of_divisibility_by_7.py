@@ -5,5 +5,5 @@ def seven(m):
         y = m % 10
         m = x - 2 * y
         steps += 1
-        
+
     return (m, steps)

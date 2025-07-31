@@ -4,5 +4,5 @@ def reverse(n):
         digit = n % 10
         reversed_num = reversed_num * 10 + digit
         n = n // 10
-    
+
     return reversed_num

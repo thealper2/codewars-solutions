@@ -7,9 +7,9 @@ def permutation_average(n):
     total = 0
     count = 0
     for perm in unique_perms:
-        num = int(''.join(perm))
+        num = int("".join(perm))
         total += num
         count += 1
-        
+
     average = total / count
     return round(average)

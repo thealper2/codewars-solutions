@@ -5,5 +5,5 @@ def sum_nested(lst):
             total += sum_nested(element)
         else:
             total += element
-            
+
     return total

@@ -1,6 +1,6 @@
 def plane_seat(a):
     p1 = p2 = ""
-    
+
     if int(a[:-1]) <= 20:
         p1 = "Front"
     elif int(a[:-1]) <= 40:
@@ -9,7 +9,7 @@ def plane_seat(a):
         p1 = "Back"
     else:
         return "No Seat!!"
-        
+
     if ord(a[-1]) <= 67:
         p2 = "Left"
     elif ord(a[-1]) <= 70:
@@ -18,5 +18,5 @@ def plane_seat(a):
         p2 = "Right"
     else:
         return "No Seat!!"
-    
-    return p1 + '-' + p2
+
+    return p1 + "-" + p2

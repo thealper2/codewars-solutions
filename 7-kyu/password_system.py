@@ -6,7 +6,7 @@ def help_zoom(grid):
     n = math.isqrt(length)
     if n * n != length:
         return "No"
-    
+
     for i in range(n):
         for j in range(n):
             sym_i = n - 1 - i

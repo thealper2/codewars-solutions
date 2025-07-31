@@ -1,8 +1,8 @@
 def sort_grades(grades):
     if not grades:
         return []
-    
-    grade_order = ['VB']
+
+    grade_order = ["VB"]
     for i in range(18):
         grade_order.append(f"V{i}")
         if i != 17:

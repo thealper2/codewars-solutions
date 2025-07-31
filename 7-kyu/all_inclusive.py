@@ -4,5 +4,5 @@ def contain_all_rots(strng, arr):
         rot = strng[i:] + strng[:i]
         if rot not in arr:
             return False
-        
+
     return True

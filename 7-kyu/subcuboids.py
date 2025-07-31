@@ -1,4 +1,4 @@
-def subcuboids(x,y,z):
+def subcuboids(x, y, z):
     sum_x = x * (x + 1) // 2
     sum_y = y * (y + 1) // 2
     sum_z = z * (z + 1) // 2

@@ -3,7 +3,7 @@ def arr2bin(arr):
     for item in arr:
         if type(item) != int:
             return False
-        
+
         result += item
-        
+
     return str(bin(result))[2:]

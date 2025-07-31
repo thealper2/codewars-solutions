@@ -4,7 +4,7 @@ import math
 def graceful_tipping(bill):
     tip = bill * 0.15
     total = bill + tip
-    
+
     if total < 10:
         return math.ceil(total)
     else:

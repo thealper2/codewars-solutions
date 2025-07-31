@@ -3,5 +3,5 @@ def two_count(n):
     while n % 2 == 0 and n != 0:
         count += 1
         n = n // 2
-    
+
     return count

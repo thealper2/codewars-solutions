@@ -3,7 +3,7 @@ def mirror(text, sequence="abcdefghijklmnopqrstuvwxyz"):
     length = len(sequence)
     for i in range(length):
         mirror_map[sequence[i]] = sequence[length - 1 - i]
-    
+
     result = []
     for char in text:
         lower_char = char.lower()
@@ -12,4 +12,4 @@ def mirror(text, sequence="abcdefghijklmnopqrstuvwxyz"):
             result.append(mirrored_char)
         else:
             result.append(char.lower())
-    return ''.join(result)
+    return "".join(result)

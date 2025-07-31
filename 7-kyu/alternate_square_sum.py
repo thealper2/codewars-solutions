@@ -6,5 +6,5 @@ def alternate_sq_sum(arr):
             square_sum += arr[i] ** 2
         else:
             square_sum += arr[i]
-    
+
     return square_sum

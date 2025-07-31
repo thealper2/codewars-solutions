@@ -1,7 +1,7 @@
 def segment_cover(A, L):
     if not A:
         return 0
-    
+
     A.sort()
     segments = 1
     start = A[0]
@@ -9,5 +9,5 @@ def segment_cover(A, L):
         if point > start + L:
             segments += 1
             start = point
-    
+
     return segments

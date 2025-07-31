@@ -3,5 +3,5 @@ def folding(a, b):
     while b != 0:
         count += a // b
         a, b = b, a % b
-        
+
     return count

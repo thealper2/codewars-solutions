@@ -1,13 +1,13 @@
 def build_row_text(index, character):
-    result = ''
+    result = ""
     for i in range(10):
-        result += '|'
+        result += "|"
         if i == index:
             result += character
         else:
-            result += ' '
-        
+            result += " "
+
         if i - 1 == 9:
-            result += '|'
-            
+            result += "|"
+
     return result[:-1]

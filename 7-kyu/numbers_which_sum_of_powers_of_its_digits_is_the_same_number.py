@@ -7,6 +7,5 @@ def eq_sum_powdig(h_max, exp):
 
         if squared == num:
             result.append(num)
-            
+
     return result
-    

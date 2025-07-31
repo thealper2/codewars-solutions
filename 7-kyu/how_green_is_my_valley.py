@@ -1,7 +1,7 @@
 def make_valley(arr):
     if not arr:
         return []
-    
+
     arr.sort()
     result = [arr[0]]
     n = len(arr)
@@ -12,7 +12,7 @@ def make_valley(arr):
                 result.append(arr[i])
             else:
                 result.insert(0, arr[i])
-    
+
             l = not l
 
     else:

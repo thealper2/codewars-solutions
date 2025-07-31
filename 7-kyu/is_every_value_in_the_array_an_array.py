@@ -4,5 +4,5 @@ def arr_check(arr):
     for element in arr:
         if not isinstance(element, list):
             return False
-        
+
     return True

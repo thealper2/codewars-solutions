@@ -4,5 +4,5 @@ def geo_mean(nums, arith_mean):
     product = 1
     for num in nums:
         product *= num
-        
+
     return product ** (1 / len(nums))

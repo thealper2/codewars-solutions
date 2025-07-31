@@ -8,13 +8,13 @@ def how_much_coffee(events):
         "CW": 2,
         "CAT": 2,
         "DOG": 2,
-        "MOVIE": 2
+        "MOVIE": 2,
     }
 
     for event in events:
         coffee += d.get(event, 0)
-        
+
         if coffee > 3:
             return "You need extra sleep"
-        
+
     return coffee

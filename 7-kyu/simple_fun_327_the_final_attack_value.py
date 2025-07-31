@@ -8,5 +8,5 @@ def final_attack_value(x, monster_list):
             current_attack += defense
         else:
             current_attack += math.gcd(defense, current_attack)
-            
+
     return current_attack

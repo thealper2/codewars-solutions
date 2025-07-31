@@ -4,6 +4,6 @@ def avg_array(arrs):
     for i in range(m):
         for j in range(n):
             averages[j] += arrs[i][j]
-    
+
     averages = [row / m for row in averages]
     return averages

@@ -1,4 +1,4 @@
-def solution(frank, sam, tom):  
+def solution(frank, sam, tom):
     count = 0
     for i in range(4):
         for j in range(4):
@@ -6,8 +6,8 @@ def solution(frank, sam, tom):
                 count += 1
                 frank[j] = 0
                 break
-                
+
             if count == 2:
                 return True
-    
+
     return False

@@ -1,12 +1,13 @@
 import math
 
+
 def all_nines(x):
     if x == 1:
         return 9
 
     if math.gcd(x, 10) != 1:
         return -1
-    
+
     k = 1
     remainder = 10 % x
     while remainder != 1:

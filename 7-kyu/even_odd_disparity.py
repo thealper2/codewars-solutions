@@ -6,5 +6,5 @@ def solve(a):
                 c += 1
             else:
                 c -= 1
-                
+
     return c

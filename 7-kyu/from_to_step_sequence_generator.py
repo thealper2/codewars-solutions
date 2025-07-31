@@ -1,4 +1,4 @@
-def generator (_from, _to, _step):
+def generator(_from, _to, _step):
     if _step == 0:
         if _from > _to:
             return [x for x in range(_to, _from - 1, -1)]

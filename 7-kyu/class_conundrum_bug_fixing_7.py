@@ -3,7 +3,7 @@ class List:
         self.data_type = data_type
         self.items = []
         self.count = 0
-    
+
     def add(self, item):
         if not isinstance(item, self.data_type):
             type_name = self.data_type.__name__

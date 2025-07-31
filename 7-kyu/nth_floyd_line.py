@@ -5,5 +5,5 @@ def nth_floyd(n):
         ub = (i * (i + 1)) // 2
         if lb <= n <= ub:
             return i
-        
+
         i += 1

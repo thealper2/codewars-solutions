@@ -2,7 +2,7 @@ def unflatten(flat_array):
     result = []
     i = 0
     n = len(flat_array)
-    
+
     while i < n:
         current = flat_array[i]
         if current < 3:

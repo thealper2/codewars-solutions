@@ -5,5 +5,5 @@ def missing(nums, s):
         if index >= len(letters_only):
             return "No mission today"
 
-    word = ''.join([letters_only[i].lower() for i in nums])
+    word = "".join([letters_only[i].lower() for i in nums])
     return word

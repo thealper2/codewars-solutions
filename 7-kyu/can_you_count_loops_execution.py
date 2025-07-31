@@ -7,6 +7,6 @@ def count_loop_iterations(arr):
         else:
             current = v + 1
         evaluations.append(product * current)
-        product *= (current - 1)
-        
+        product *= current - 1
+
     return evaluations

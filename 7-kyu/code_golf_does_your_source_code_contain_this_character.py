@@ -1,1 +1,1 @@
-d=lambda a:a in' :=lambdain\'\\'
+d = lambda a: a in " :=lambdain'\\"

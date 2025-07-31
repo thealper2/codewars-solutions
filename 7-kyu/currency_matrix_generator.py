@@ -3,15 +3,15 @@ def generate_currency_matrix(currency):
     n = len(currency_strength)
     result = []
     found = False
-    
+
     for i in range(n):
         if currency_strength[i] == currency:
             found = True
-            
+
         elif found:
             result.append(currency + currency_strength[i])
-        
+
         else:
             result.append(currency_strength[i] + currency)
-            
+
     return result

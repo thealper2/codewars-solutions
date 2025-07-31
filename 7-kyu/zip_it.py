@@ -1,4 +1,4 @@
-def lstzip(a,b,fn):
+def lstzip(a, b, fn):
     la = len(a)
     lb = len(b)
     if la == lb:

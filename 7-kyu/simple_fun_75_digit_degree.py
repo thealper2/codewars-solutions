@@ -3,5 +3,5 @@ def digit_degree(n):
     while n >= 10:
         n = sum(int(d) for d in str(n))
         count += 1
-        
+
     return count

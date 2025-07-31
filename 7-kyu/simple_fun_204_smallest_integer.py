@@ -3,7 +3,7 @@ def smallest_integer(matrix):
     for row in matrix:
         for num in row:
             elements.add(num)
-    
+
     candidate = 0
     while True:
         if candidate not in elements:

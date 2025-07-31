@@ -1,8 +1,8 @@
-def pattern(n): 
+def pattern(n):
     result = []
     for line in range(1, n + 1):
-        spaces = ' ' * line
+        spaces = " " * line
         number = line % 10
-        numbers = (str(number) + ' ') * (n - line + 1)
+        numbers = (str(number) + " ") * (n - line + 1)
         result.append(spaces + numbers.strip())
-    return '\n'.join(result)
+    return "\n".join(result)

@@ -9,5 +9,5 @@ def computer_to_phone(numbers):
             result += str(int(number) + 6)
         else:
             result += number
-        
+
     return result

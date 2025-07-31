@@ -2,13 +2,13 @@ def find_missing_number(sequence):
     parts = sequence.split()
     numbers = []
     for part in parts:
-        if not part.lstrip('-').isdigit():
+        if not part.lstrip("-").isdigit():
             return 1
         numbers.append(int(part))
-    
+
     if not numbers:
         return 0
-    
+
     unique_numbers = set(numbers)
     max_num = max(unique_numbers)
     if unique_numbers == set(range(1, max_num + 1)):
@@ -17,4 +17,4 @@ def find_missing_number(sequence):
         for i in range(1, max_num + 2):
             if i not in unique_numbers:
                 return i
-        return max_num + 1 
+        return max_num + 1

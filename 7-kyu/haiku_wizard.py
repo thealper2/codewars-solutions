@@ -7,7 +7,7 @@ def haiku_wizard(arr):
             index = num % 10
             word = words[syllable][index]
             line_words.append(word)
-            
-        haiku_lines.append(' '.join(line_words))
-        
-    return '\n'.join(haiku_lines)
+
+        haiku_lines.append(" ".join(line_words))
+
+    return "\n".join(haiku_lines)

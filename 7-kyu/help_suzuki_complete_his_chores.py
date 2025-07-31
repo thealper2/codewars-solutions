@@ -3,7 +3,7 @@ def chore_assignment(chores):
     workloads = []
     left = 0
     right = len(chores_sorted) - 1
-    
+
     while left <= right:
         if left == right:
             workloads.append(chores_sorted[left])
@@ -11,5 +11,5 @@ def chore_assignment(chores):
             workloads.append(chores_sorted[left] + chores_sorted[right])
         left += 1
         right -= 1
-        
+
     return sorted(workloads)

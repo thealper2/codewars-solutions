@@ -1,7 +1,7 @@
 def martingale(bank, outcomes):
     if not outcomes:
         return bank
-    
+
     stake = 100
     for outcome in outcomes:
         if outcome == 0:
@@ -10,5 +10,5 @@ def martingale(bank, outcomes):
         elif outcome == 1:
             bank += stake
             stake = 100
-        
+
     return bank

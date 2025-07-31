@@ -5,8 +5,8 @@ def caffeine_buzz(n):
         result = "Java"
     else:
         return "mocha_missing!"
-    
+
     if n % 2 == 0:
         result += "Script"
-    
+
     return result
