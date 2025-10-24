@@ -1,27 +1,37 @@
 def convert_temp(temp, from_scale, to_scale):
-    TO_CELSIUS = {
-        'C': (1, 0),
-        'F': (5.0 / 9, -32 * 5.0 / 9),
-        'K': (1, -273.15),
-        'R': (5.0 / 9, -491.67 * 5.0 / 9),
-        'De': (-2.0 / 3, 100),
-        'N': (100.0 / 33, 0),
-        'Re': (5.0 / 4, 0),
-        'Ro': (40.0 / 21, -7.5 * 40.0 / 21),
-    }
-    
     if from_scale == to_scale:
-        return round(temp)
+        return temp
     
-    if from_scale != 'C':
-        a, b = TO_CELSIUS[from_scale]
-        temp_celsius = a * temp + b
-    else:
-        temp_celsius = temp
+    if from_scale == 'C':
+        celsius = temp
+    elif from_scale == 'F':
+        celsius = (temp - 32) * 5/9
+    elif from_scale == 'K':
+        celsius = temp - 273.15
+    elif from_scale == 'R':
+        celsius = (temp - 491.67) * 5/9
+    elif from_scale == 'De':
+        celsius = 100 - temp * 2/3
+    elif from_scale == 'N':
+        celsius = temp * 100/33
+    elif from_scale == 'Re':
+        celsius = temp * 5/4
+    elif from_scale == 'Ro':
+        celsius = (temp - 7.5) * 40/21
     
     if to_scale == 'C':
-        return round(temp_celsius)
-    
-    a, b = TO_CELSIUS[to_scale]
-    result = (temp_celsius - b) / a
-    return round(result)
+        return int(celsius)
+    elif to_scale == 'F':
+        return int(celsius * 9/5 + 32)
+    elif to_scale == 'K':
+        return int(celsius + 273.15)
+    elif to_scale == 'R':
+        return int((celsius + 273.15) * 9/5)
+    elif to_scale == 'De':
+        return int((100 - celsius) * 3/2)
+    elif to_scale == 'N':
+        return int(celsius * 33/100)
+    elif to_scale == 'Re':
+        return int(celsius * 4/5)
+    elif to_scale == 'Ro':
+        return int(celsius * 21/40 + 7.5)
