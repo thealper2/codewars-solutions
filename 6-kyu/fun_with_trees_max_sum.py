@@ -1,0 +1,16 @@
+from preloaded import TreeNode
+
+def max_sum(root: TreeNode) -> int:
+    if root is None:
+        return 0
+    
+    if root.left is None and root.right is None:
+        return root.value
+    
+    if root.left is None:
+        return root.value + max_sum(root.right)
+    
+    if root.right is None:
+        return root.value + max_sum(root.left)
+    
+    return root.value + max(max_sum(root.left), max_sum(root.right))
