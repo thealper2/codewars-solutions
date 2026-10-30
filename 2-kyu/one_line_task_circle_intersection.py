@@ -1,0 +1,1 @@
+from math import*;circleIntersection=lambda a,b,r:(lambda d:int(d<2*r and 2*r*r*acos(d/2/r)-d/2*sqrt(4*r*r-d*d)))(dist(a,b))
